@@ -110,6 +110,10 @@ async function safeSaveCreds(
 }
 
 async function printTerminalQr(qr: string): Promise<void> {
+  process.stdout.write(
+    "\nNote: If using WSL and the QR code cannot be scanned successfully, " +
+      "please change the WSL terminal font to MS Gothic and try again.\n\n",
+  );
   const output = await renderQrTerminal(qr, { small: true });
   process.stdout.write(output.endsWith("\n") ? output : `${output}\n`);
 }
