@@ -6,7 +6,7 @@ import { VERSION } from "openclaw/plugin-sdk/cli-runtime";
 import { resolveAmbientNodeProxyAgent } from "openclaw/plugin-sdk/extension-shared";
 import { danger, success } from "openclaw/plugin-sdk/runtime-env";
 import { getChildLogger, toPinoLikeLogger } from "openclaw/plugin-sdk/runtime-env";
-import { isWSLEnv } from "openclaw/plugin-sdk/infra-runtime";
+import { isWSLEnv } from "openclaw/plugin-sdk/runtime-env";
 import { ensureDir, resolveUserPath } from "openclaw/plugin-sdk/text-runtime";
 import {
   readCredsJsonRaw,

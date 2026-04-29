@@ -6,7 +6,7 @@
  * the openclaw WizardPrompter surface.
  */
 import { fetchWithSsrFGuard } from "openclaw/plugin-sdk/ssrf-runtime";
-import { isWSLEnv } from "openclaw/plugin-sdk/infra-runtime";
+import { isWSLEnv } from "openclaw/plugin-sdk/runtime-env";
 import { renderQrTerminal } from "./qr-terminal.js";
 import type { FeishuDomain } from "./types.js";
 
